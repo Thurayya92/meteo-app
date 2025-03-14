@@ -6,35 +6,48 @@
     <title>Meteo App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <h1>Lisbon</h1>
-      <div>
-        <p>
-          Monday 16:17, light rain <br />
-          Humidity: 81%, Wind: 33 km/h
-        </p>
-      </div>
-      <div>🌧 15ºC</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/Thurayya92" target="_blank">
-        Soraia Marques
-      </a>
-      hosted on
-      <a href="https://github.com/Thurayya92/meteo-app" target="_blank">
-        GitHub
-      </a>
-      and website hosted on
-      <a href="https://thurayya-shecodesapp.netlify.app/" target="_blank">
-        Nettlify
-      </a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-city">Lisbon</h1>
+            <p class="weather-details">
+              Monday 16:17, light rain <br />
+              Humidity: <strong> 81% </strong>, Wind: <strong>33Km/h</strong>
+            </p>
+          </div>
+          <div class="weather-container">
+            <div class="weather-icon">🌧</div>
+            <div class="weather-temperature">15</div>
+            <div class="weather-unit">ºC</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/Thurayya92" target="_blank">
+          Soraia Marques
+        </a>
+        hosted on
+        <a href="https://github.com/Thurayya92/meteo-app" target="_blank">
+          GitHub
+        </a>
+        and website hosted on
+        <a href="https://thurayya-shecodesapp.netlify.app/" target="_blank">
+          Nettlify
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
